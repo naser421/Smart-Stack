@@ -15,4 +15,4 @@ export default function Card({id, front, back}) {
             </div>
        </div>
     )
-}
+} // End of program execution
