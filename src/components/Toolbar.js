@@ -8,7 +8,8 @@ export default function Toolbar(props) {
             <Container>
             <Navbar.Brand href="#home">
                 <img
-                alt=""
+                        alt=""
+                        // Linking image to the .js code
                 src="/backgroundImg.jpg"
                 width="30"
                 height="30"
