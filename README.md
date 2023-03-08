@@ -21,3 +21,4 @@ We want Smart Cards to be the go to web application for anyone who is looking to
 ## Application Screenshot
 
 ![Application_Snip](src/images/App_Screenshot.JPG);
+![Application_Snip](src/images/App_Functionality.JPG);
