@@ -25,7 +25,7 @@ const INITIAL_FLASHCARDS = [
 	{ id: 22, front: "var carName;", back: "How do you declare a JavaScript variable?" },
 	{ id: 23, front: "=", back: "Which operator is used to assign a value to a variable?" },
 	{ id: 24, front: "true", back: "What will the following code return: Boolean(10 > 9)" },
-	{ id: 25, front: "Yes", back: "Is JavaScript case-sensitive?" },
+	{ id: 25, front: "Yes", back: "Is JavaScript case-sensitive?" }, 
 	];
 
 const FLASHCARDS_KEY = 'flashcards';
