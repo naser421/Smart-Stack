@@ -17,3 +17,7 @@ We want Smart Cards to be the go to web application for anyone who is looking to
 **Deployed On:**
 
 ![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+
+## Application Screenshot
+
+![Application_Snip]("./App_Screenshot.jpg");
