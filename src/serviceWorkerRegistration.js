@@ -58,7 +58,7 @@ const seedLocalization = Boolean(
                 }
               } else {
               
-                console.log('Content is cached for offline use.');
+                console.log('Going offline!');
   
                if (config && config.onSuccess) {
                   config.onSuccess(registration);
@@ -69,7 +69,7 @@ const seedLocalization = Boolean(
         };
       })
       .catch((error) => {
-        console.error('Error during service worker registration:', error);
+        console.error('An error has occurred!', error);
       });
   }
   
@@ -97,7 +97,7 @@ const seedLocalization = Boolean(
         }
       })
       .catch(() => {
-        console.log('No internet connection found. App is running in offline mode.');
+        console.log('You are currently in offline mode.');
       });
   }
   
