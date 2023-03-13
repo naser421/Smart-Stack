@@ -10,23 +10,23 @@ import { useFlashcards } from './hooks/Flashcards';
 function App() {
   const [CompleteCards] = useFlashcards();
   const totalCards = CompleteCards.length;
-  const [curCardId, setCurCardId] = useState(1);
+  const [CurrentID, setCurrentID] = useState(1);
 
   let goToPrev = () => {
-    if ( isValidId(curCardId - 1)) {
-      setCurCardId(curCardId - 1);
+    if ( isValidId(CurrentID - 1)) {
+      setCurrentID(CurrentID - 1);
     }
     else {
-      setCurCardId(totalCards);
+      setCurrentID(totalCards);
     }
   }
 
   let goToNext = () => {
-    if ( isValidId(curCardId + 1)) {
-      setCurCardId(curCardId + 1);
+    if ( isValidId(CurrentID + 1)) {
+      setCurrentID(CurrentID + 1);
     }
     else {
-      setCurCardId(1);
+      setCurrentID(1);
     }
   };
 
@@ -38,7 +38,7 @@ function App() {
     <>
     <Toolbar></Toolbar>
     <Container className="container-main">
-      <Card {...CompleteCards.find(item=> item.id === curCardId)}></Card>
+      <Card {...CompleteCards.find(item=> item.id === CurrentID)}></Card>
       <div className="action-buttons">
         <Button variant="warning" className="me-4 prev-next-btns" onClick={goToPrev}>Prev</Button>
         <Button variant="success" className="ms-4 prev-next-btns" onClick={goToNext}>Next</Button>

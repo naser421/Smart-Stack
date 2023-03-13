@@ -7,7 +7,5 @@ body {
     background-image: url("./images/backgroundImg.jpg");
     background-repeat: repeat-y;
     background-size: cover;
-    height: 5vh;
-    
-    
+    height: 5vh;    
 }
