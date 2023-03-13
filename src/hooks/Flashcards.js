@@ -28,17 +28,17 @@ const INITIAL_FLASHCARDS = [
 	{ id: 25, front: "Yes", back: "Is JavaScript case-sensitive?" }, 
 	];
 
-const FLASHCARDS_KEY = 'flashcards';
+const FLASHCARDS_API = 'flashcards';
 
 function getStorageFlashcards() {
-    const cards = localStorage.getItem(FLASHCARDS_KEY);
+    const cards = localStorage.getItem(FLASHCARDS_API);
     return JSON.parse(cards) || INITIAL_FLASHCARDS;
 }
 
 export function useFlashcards() {
     const [flashCards] = useState(getStorageFlashcards);
 
-    useEffect(() => localStorage.setItem(FLASHCARDS_KEY, JSON.stringify(flashCards)), [flashCards]);
+    useEffect(() => localStorage.setItem(FLASHCARDS_API, JSON.stringify(flashCards)), [flashCards]);
 
     return [flashCards];
 }

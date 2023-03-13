@@ -5,11 +5,11 @@ import Card from './components/Card';
 import Toolbar from './components/Toolbar';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import { useFlashcards } from './hooks/useFlashcards';
+import { useFlashcards } from './hooks/Flashcards';
 
 function App() {
-  const [allCards] = useFlashcards();
-  const totalCards = allCards.length;
+  const [CompleteCards] = useFlashcards();
+  const totalCards = CompleteCards.length;
   const [curCardId, setCurCardId] = useState(1);
 
   let goToPrev = () => {
@@ -38,7 +38,7 @@ function App() {
     <>
     <Toolbar></Toolbar>
     <Container className="container-main">
-      <Card {...allCards.find(item=> item.id === curCardId)}></Card>
+      <Card {...CompleteCards.find(item=> item.id === curCardId)}></Card>
       <div className="action-buttons">
         <Button variant="warning" className="me-4 prev-next-btns" onClick={goToPrev}>Prev</Button>
         <Button variant="success" className="ms-4 prev-next-btns" onClick={goToNext}>Next</Button>
